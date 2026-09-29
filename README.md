@@ -4,6 +4,7 @@
 
 - datalab
 - bomb
+- attack
 
 ## 使用
 

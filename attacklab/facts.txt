@@ -1,0 +1,4 @@
+(gdb) b *0x4017ac
+(gdb) run -q
+(gdb) p $rsp
+$1 = (void *) 0x5561dc78
