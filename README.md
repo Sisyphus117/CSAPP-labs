@@ -3,8 +3,9 @@
 ## 目前进度
 
 - datalab
-- bomb
-- attack
+- bomblab
+- attacklab
+- archlab
 
 ## 使用
 

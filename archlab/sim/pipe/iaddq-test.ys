@@ -1,0 +1,5 @@
+.pos 0
+irmovq $10, %rax
+iaddq $5, %rax
+addq %rax, %rbx
+halt

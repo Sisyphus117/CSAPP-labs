@@ -1,0 +1,5 @@
+ldriver
+before: CPI: 897 cycles/765 instructions = 1.17
+replace add with iadd: CPI: 740 cycles/608 instructions = 1.22
+avoid read-write conflicts: 803 cycles/671 instructions = 1.20
+change order: CPI: 677 cycles/608 instructions = 1.11

@@ -1,0 +1,48 @@
+# Execution begins at address 0 
+	.pos 0 
+	irmovq stack, %rsp  	# Set up stack pointer  
+	call main		# Execute main program
+	halt			# Terminate program 
+
+    .align 8
+# Source block
+src:
+    .quad 0x00a
+    .quad 0x0b0
+    .quad 0xc00
+# Destination block
+dest:
+    .quad 0x111
+    .quad 0x222
+    .quad 0x333
+    
+main:
+	irmovq src,%rdi	
+	irmovq dest,%rsi	
+    irmovq $3,%rdx
+	call copy_block
+	ret 
+
+copy_block:
+    irmovq $0,%rax # rax for result 
+loop:
+    irmovq $0,%rcx # if the last element
+    subq %rcx,%rdx
+    je done
+    irmovq $1,%rcx # len-- 
+    subq %rcx,%rdx 
+
+    mrmovq (%rdi),%r8
+    xorq %r8,%rax
+    rmmovq %r8,(%rsi)
+
+    irmovq $8,%rcx
+    addq %rcx,%rdi
+    addq %rcx,%rsi
+
+    jmp loop
+done:
+    ret 
+
+.pos 0x200
+stack:
