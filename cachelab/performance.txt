@@ -1,0 +1,2 @@
+func 1 (Simple row-wise scan transpose): hits:869, misses:1184, evictions:1152
+func 0 (Transpose submission): hits:1709, misses:344, evictions:312

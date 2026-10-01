@@ -6,6 +6,7 @@
 - bomblab
 - attacklab
 - archlab
+- cachelab
 
 ## 使用
 

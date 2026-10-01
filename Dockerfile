@@ -20,6 +20,7 @@ RUN printf '%s\n' \
         flex \
         bison \
         tk-dev tcl-dev \
+        valgrind \
         python3 && \
     rm -rf /var/lib/apt/lists/*
 
