@@ -7,6 +7,7 @@
 - attacklab
 - archlab
 - cachelab
+- shlab
 
 ## 使用
 
