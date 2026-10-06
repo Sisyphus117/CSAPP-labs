@@ -21,6 +21,8 @@ RUN printf '%s\n' \
         bison \
         tk-dev tcl-dev \
         valgrind \
+        curl \
+        net-tools \
         python3 && \
     rm -rf /var/lib/apt/lists/*
 

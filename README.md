@@ -8,6 +8,8 @@
 - archlab
 - cachelab
 - shlab
+- malloc
+- proxylab
 
 ## 使用
 
